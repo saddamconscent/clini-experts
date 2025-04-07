@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CliniExperts Application</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon1-1.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+    <div class="container-fluid border-bottom">
+      <div class="container">
+          <div class="row justify-content-center justify-content-md-end justify-content-lg-end pt-2 pb-2">
+              <div class="col-auto text-center text-md-right">
+                  <a href="tel:917672005050" class="d-flex align-items-center">
+                      <i class="fa fa-phone blink mr-2" aria-hidden="true"></i>
+                      <span class="text-black">&nbsp;+91 7672005050</span>
+                  </a>
+              </div>
+              <div class="col-auto text-center text-md-right">
+                  <a href="mailto:contact@example.com" class="d-flex align-items-center">
+                      <i class="fa fa-envelope mr-2" aria-hidden="true"></i>
+                      <span class="text-black">&nbsp;contact@example.com</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </div>
+  
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row justify-content-between pt-3 pb-3">
+          <div class="col-3">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <!-- Uncomment the line below if you also wish to use an image logo -->
+              <img src="assets/img/CliniExperts-logo.jpeg" alt="Logo">
+            </a>
+          </div>
+          <div class="col-9 d-flex justify-content-end">
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Dropdown 1</a></li>
+                    <li><a href="#">Dropdown 2</a></li>
+                    <li><a href="#">Dropdown 3</a></li>
+                    <li><a href="#">Dropdown 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+    <!-- banner start -->
+    <div class="container-fluid banner-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-white d-flex flex-column justify-content-center">
+            <p>Regulatory Body</p>
+            <h2 class="">Medical Devices Class A & B – The lifeline of Healthcare Industry</h2>
+            <p>CliniExperts manages all regulatory and compliance mandates seamlessly</p>
+            <button type="button" class="btn-white">REACH US VIA</button>
+          </div>
+          <div class="col-md-6">
+            <div class="form-wrapper">  
+              <h6>To know more about the rules<br>Please fill the form</h6>
+              
+              <form id="registrationForm">
+                <div class="form-input">
+                    <input type="text" class="form-control" id="fullName" name="fullName" required
+                          placeholder="Name">
+                    <div class="error-message" id="fullNameError"></div>
+                </div>
+
+                <div class="form-input">
+                    <input type="email" class="form-control" id="email" name="email" required
+                          placeholder="Email Address">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-input">
+                  <select class="form-control" id="enquiry_type" name="enquiry_type" required>
+                    <option>Enquiry Type</option>
+                    <option>India Regulatory Services</option>
+                    <option>Drug</option>
+                    <option>Food</option>
+                    <option>Cosmetic</option>
+                 </select>
+                </div>
+
+                <div class="form-input">
+                    <input type="tel" class="form-control" id="phone" name="phone" required
+                          placeholder="Phone Number">
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+                
+
+                <div class="form-input">
+                  <textarea placeholder="Comments" name="comments" rows="1"></textarea>
+                  <div class="error-message" id="phoneError"></div>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit" class="clini-btn"> Submit </button>
+                </div>
+
+            </form>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- about start -->
+    <div class="container-fluid about-wrapper">
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-md-10 col-lg-8 text-black">
+            <p class="text-center">India is one of the top-20 Medical Device markets in the world. With a predicted 2020-2025 CAGR PF 37%, it is expected to touch $50 billion in revenues by 2025. Class A and B devices have a significant share in this market.</p>
+            <div class="about-box text-center mt-5 mb-5">
+              <p class="">However, procuring the necessary approvals, licenses, and certifications for these devices is a Herculean task. Just the plant master file requires filing of over 40 detailed documents spread over 12 different parameters. Then there is the equally exhaustive device master file to take care of, registration on SUGAM portal, ISO 13485 certification… the regulatory mandates are seemingly endless!</p>
+              <p class="text-center">That’s not all. A new licensing regime for these devices comes into effect from 01-10-2022.</p>
+              <button type="button" class="clini-btn about-btn">Let our expert deal with it seamlessly. Call our helpline +91 7672005050 Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about end -->
+
+    <!-- regularity body start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center text-black">
+          <h3>About Regulatory Body</h3>
+          <p>Manufacturing Medical Devices requires stringent processes to be completed under the laid down rules and regulations by Central Drug Standard Control Organisation (CDSCO). In addition, applicants who intend to manufacture Class A or Class B Medical Devices have to go through a procedure by applying for a license to sell or distribute Medical Devices. The CDSCO ensures quality and safety of medical devices sold in the market in this manner.</p>
+          <p>Such applicants have to apply to the State Licensing Authority for approval from the Ministry of Health and Family Welfare's online portal, depending on the applicant's location. An application has to be submitted in FORM MD-3 along with necessary documents for procuring a license as FORM MD-5.</p>
+        </div>
+        <div class="col-md-6 text-white d-flex flex-column justify-content-center">
+          <img class="img-fluid w-100" src="assets/img/rules.png" />
+        </div>
+      </div>
+    </div>
+    <!-- regularity body end -->
+
+    <!-- ab-device start -->
+    <div class="container">
+      <div class="row flex-md-row-reverse">
+        <div class="col-md-6 d-flex flex-column justify-content-center text-black">
+          <h3>About Class A and B Medical Device</h3>
+          <p>A medical device is a product used for human or animal diagnosis, treatment or prevention of diseases. According to the Medical Devices Rules, 2017, medical devices are classified into four categories- Class A to Class D based on their risk. Class A and Class B medical devices come under the category of low-to-moderate risk.</p>
+          <p>Class A medical devices are low-risk devices with minimal or no invasiveness (like thermometers) Class B medical devices are low-to-moderate risk devices with minimal invasiveness (like needles and suction cannula).</p>
+        </div>
+        <div class="col-md-6 text-white d-flex flex-column justify-content-center">
+          <img class="img-fluid w-100" src="assets/img/ab-device.png" />
+        </div>
+      </div>
+    </div>
+    <!-- ab-device end -->
+
+    <!-- Regulate start -->
+
+  <div class="container-fluid bg-wave-2 pb-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pr-md-4 d-flex flex-column justify-content-center">
+          <div class="about-box text-center radius-6 mr-3 text-black">
+          <h3>How It Is Regulated?</h3>
+          <p>The licensing authority in India is the Central Standard Control Organisation (CDSCO). The licensing process in a nutshell:</p>
+          <p>Fill up the exhaustive application Form MD-3 and upload it on the SUGAM portal</p>
+          <hr />
+          <p>State licensing authorities issue permission to manufacture Class A and B devices on Form MD-5 after a grueling evaluation process</p>
+        </div>
+        </div>
+        <div class="col-md-8 pl-md-4 text-white d-flex flex-column justify-content-center regulated-color radius-6 mmt-3">
+          <div class="row row-box-1">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <img class="img-fluid w-100" src="assets/img/regulated.png" />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h4 class="text-white">Why to get <br>manufacturing License <br>before <strong><i>1st October, 2022</i></strong></h4>
+              <button type="submit" class="btn-white mt-3"> GET STARTED </button>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center border-right row-box-bottom-1">State licensing authorities issue perm ission to manufacture</div>
+            <div class="col-md-4 d-flex flex-column justify-content-center border-right row-box-bottom-1">State licensing authorities issue perm ission to manufacture</div>
+            <div class="col-md-4 d-flex flex-column justify-content-center row-box-bottom-1">State licensing authorities issue perm ission to manufacture</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Regulate end -->
+
+    <!-- start -->
+
+    <!-- ab-device start -->
+    <div class="container" style="padding: 40px 0;">
+      <div class="row mt-5 mb-5">
+        <div class="col-md-4 text-white d-flex flex-column justify-content-center">
+          <div class="mr-3">
+            <img class="img-fluid" src="assets/img/calendra.png" />
+          </div>
+        </div>
+        <div class="col-md-8 d-flex flex-column justify-content-center mmt-3">
+          <h3>CliniExperts Can Assist In</h3>
+          <p class="text-black">Medical Devices must establish a stringent product testing regime. Apart from a vast range of testing parameters including testing on different software, this regime also includes a strict compliance protocol. Once test licence is obtained permission for manufacturing is required.</p>
+          <p class="text-black">Once all these parameters are established, an application to procure a test license has to be submitted on Form MD-12, and the permission is granted on Form MD-13.
+            Fulfilment of these requirements is an experienced expert’s task. In-house attempts often result in waste of time, money, and resources. Ciliniexperts, the regulatory experts, can handle it effortlessly.</p>
+          <button type="submit" class="clini-btn"> Permission to Manufacture Class A-B Medical Devices </button>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="container about-box radius-6">
+      <div class="row">
+        <div class="col-md-2 text-white d-flex flex-column justify-content-top">
+          <div class="box-top-align clini-btn about-btn">
+            <h5 class="text-white">Quality<br>Management<br>System </h5>
+          </div>
+        </div>
+        <div class="col-md-10 mmt-3 overflow-auto">
+          <button type="button" class="clini-btn-2">Form Names: 20B, 21B</button>
+          <hr />
+          <h5>SUGAM Registration- MD/ IVD</h5>
+          <p class="text-black">Under the ambitious Digital India initiative, the Ministry of Health and Family Welfare has established the versatile and efficient SUGAM portal. With its 3600 tracking, querying, upload/download, and many other useful features, the SUGAM interface facilitates digital processing of almost all requirements related with Class A and B medical devices. Cliniexperts’ thorough knowledge of this portal can speed up these processes in a ZERO-ERROR digital environment.</p>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h6 class="text-black"><strong>Regulatory Body Requirement</strong></h6>
+              <p class="text-black">The registration process for medical devices is primarily done on the SUGAM portal, a website where the applicants apply for approval of licenses, FSC and Registration numbers. In addition, the portal provides an interface and ease of access for applicants to track the submitted application, query responses and the ability to download permissions issued by the CDSCO.</p>
+              <p class="text-black">Any applications submitted are reviewed and approved/rejected by the CDSCO. The process involves the submission of necessary documents on the online portal. After uploading the documents, applicants must submit a hard copy of the papers to the CDSCO (Medical Device Division) for further approval on the medical device portal.  </p>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-black"><strong>How to Apply</strong></h6>
+              <ul class="text-black">
+                <li>Step 1: An applicant (manufacturer/importer) requires a user login id with the credential to apply on the SUGAM portal (https://cdscomdonline.gov.in/NewMedDev/Homepage).</li>
+                <li>Step 2: The registration requires uploading all the self-attested copies of the undertaking (the documents which include the name and address of the Company and issued by the Government Authority).</li>
+                <li>Step 3: The applicant also has to upload Aadhar ID proof (Authorised person/agent), the manufacturing license or Wholesale Drug License and the certificate of incorporation.</li>
+                <li>Step 4: After online registration, the applicant must submit hard copies of all the uploaded documents and the Cover Letter to the CDSCO for verification. The CDSCO will approve the Sugam Registration after evaluating the proposed application and the documents.</li>
+              </ul>
+            </div>
+            <button type="submit" class="clini-btn"> Read More </button>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="container about-box radius-6 mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-2 text-white d-flex flex-column justify-content-top">
+          <div class="box-top-align clini-btn about-btn">
+            <h5 class="text-white">Quality<br>Management<br>System </h5>
+          </div>
+        </div>
+        <div class="col-md-10 mmt-3 overflow-auto">
+          <button type="button" class="clini-btn-2">Form Names: 20B, 21B</button>
+          <hr />
+          <h5>SUGAM Registration- MD/ IVD</h5>
+          <p class="text-black">Under the ambitious Digital India initiative, the Ministry of Health and Family Welfare has established the versatile and efficient SUGAM portal. With its 3600 tracking, querying, upload/download, and many other useful features, the SUGAM interface facilitates digital processing of almost all requirements related with Class A and B medical devices. Cliniexperts’ thorough knowledge of this portal can speed up these processes in a ZERO-ERROR digital environment.</p>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h6 class="text-black"><strong>Regulatory Body Requirement</strong></h6>
+              <p class="text-black">The registration process for medical devices is primarily done on the SUGAM portal, a website where the applicants apply for approval of licenses, FSC and Registration numbers. In addition, the portal provides an interface and ease of access for applicants to track the submitted application, query responses and the ability to download permissions issued by the CDSCO.</p>
+              <p class="text-black">Any applications submitted are reviewed and approved/rejected by the CDSCO. The process involves the submission of necessary documents on the online portal. After uploading the documents, applicants must submit a hard copy of the papers to the CDSCO (Medical Device Division) for further approval on the medical device portal.  </p>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-black"><strong>How to Apply</strong></h6>
+              <ul class="text-black">
+                <li>Step 1: An applicant (manufacturer/importer) requires a user login id with the credential to apply on the SUGAM portal (https://cdscomdonline.gov.in/NewMedDev/Homepage).</li>
+                <li>Step 2: The registration requires uploading all the self-attested copies of the undertaking (the documents which include the name and address of the Company and issued by the Government Authority).</li>
+                <li>Step 3: The applicant also has to upload Aadhar ID proof (Authorised person/agent), the manufacturing license or Wholesale Drug License and the certificate of incorporation.</li>
+                <li>Step 4: After online registration, the applicant must submit hard copies of all the uploaded documents and the Cover Letter to the CDSCO for verification. The CDSCO will approve the Sugam Registration after evaluating the proposed application and the documents.</li>
+              </ul>
+            </div>
+            <button type="submit" class="clini-btn"> Read More </button>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- ab-device end -->
+
+    <!-- end -->
+  </main>
+
+  <footer class="banner-wrapper">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-md-3 text-right">
+          <h4 class="text-white">Contact Us</h4>
+        </div>
+        <div class="col-md-6">
+          <p>Medical Devices must establish a stringent product testing regime.</p>
+        </div>
+        <div class="col-md-3">
+          <button class="footer-req-btn" type="button">REQUEST FOR A PROPOSEL</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
